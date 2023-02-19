@@ -1,0 +1,40 @@
+/* CSS element Selector */
+h1 {
+  color: darkblue;
+}
+
+h2 {
+  color: cadetblue;
+  text-align: center;
+}
+
+/* CSS id Selector */
+#blue_h2 {
+  color: blue;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#red_para {
+  color: red;
+}
+
+/* CSS class Selector */
+.brown {
+  color: brown;
+}
+
+p.brown {
+  font-size: xx-large;
+}
+
+/* CSS Universal Selector */
+* {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+/* CSS Grouping Selector */
+h1,
+h2,
+p {
+  font-size: medium;
+}
