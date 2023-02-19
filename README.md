@@ -16,18 +16,30 @@ This course breaks down the fundamentals of CSS into digestible, easy to underst
 
 Bellow a very basic `CSS` example:
 
-    ```css
-    body {
-    background-color: lightblue;
-    }
+```css
+body {
+  background-color: lightblue;
+}
 
-    h1 {
-    color: brown;
-    text-align: center;
-    }
+h1 {
+  color: brown;
+  text-align: center;
+}
 
-    p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
-    }
-    ```
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+}
+```
+
+## CSS Syntax
+
+!["CSS Syntax"](./assets/css_syntax.png "CSS Syntax")
+
+The selector points to the HTML element you want to style.
+
+The declaration block contains one or more declarations separated by semicolons.
+
+Each declaration includes a CSS property name and a value, separated by a colon.
+
+Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces.
