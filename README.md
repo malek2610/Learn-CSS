@@ -127,3 +127,150 @@ p {
   font-size: medium;
 }
 ```
+
+## How to Insert CSS?
+
+There are three ways of inserting a style sheet:
+
+- External CSS
+- Internal CSS
+- Inline CSS
+
+### External CSS
+
+With an external style sheet `css` file
+
+```shell
+├── index.html
+└── style.css
+```
+
+The `index.html` contains a link to the `css` file within the `head` tag
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn CSS - 004 How to insert CSS?</title>
+
+    <!-- My Stylesheet File -->
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+  </head>
+
+  <body>
+    <h1>How to insert CSS?</h1>
+
+    <h2>External CSS</h2>
+
+    <p class="external_css">
+      This paragraph was styled using an external CSS file
+    </p>
+  </body>
+</html>
+```
+
+The `style.css` contains therefore
+
+```css
+.external_css {
+  color: blue;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+```
+
+### Internal CSS
+
+The internal style is defined inside the `<style>` element, inside the head section.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn CSS - 004 How to insert CSS?</title>
+
+    <!-- My Stylesheet File -->
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+
+    <!-- Internal CSS -->
+    <style>
+      .internal_css {
+        color: red;
+        font-size: 25px;
+        background-color: aquamarine;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>How to insert CSS?</h1>
+
+    <h2>External CSS</h2>
+
+    <p class="external_css">
+      This paragraph was styled using an external CSS file
+    </p>
+
+    <h2>Internal CSS</h2>
+
+    <p class="internal_css">
+      For this paragraph an internal css was used to change its style
+    </p>
+  </body>
+</html>
+```
+
+### Inline CSS
+
+To use inline styles, add the style attribute to the relevant element. The style attribute can contain any CSS property.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn CSS - 004 How to insert CSS?</title>
+
+    <!-- My Stylesheet File -->
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+
+    <!-- Internal CSS -->
+    <style>
+      .internal_css {
+        color: red;
+        font-size: 25px;
+        background-color: aquamarine;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>How to insert CSS?</h1>
+
+    <h2>External CSS</h2>
+
+    <p class="external_css">
+      This paragraph was styled using an external CSS file
+    </p>
+
+    <h2>Internal CSS</h2>
+
+    <p class="internal_css">
+      For this paragraph an internal css was used to change its style
+    </p>
+
+    <h2>Inline CSS</h2>
+
+    <p style="color: blueviolet; text-align: center;">
+      Finally for this paragraph, the inline css was used for the styling
+    </p>
+  </body>
+</html>
+```
