@@ -274,3 +274,101 @@ To use inline styles, add the style attribute to the relevant element. The style
   </body>
 </html>
 ```
+
+## CSS Colors
+
+Colors can be used under CSS using (i) predefined color names, (ii) RGB, (iii) HEX, (iv) HSL, (v) RGBA, or (vi) HSLA values.
+
+### CSS Color Names
+
+In CSS, a color can be specified by its predefined color name. The following [link](https://www.w3.org/wiki/CSS/Properties/color/keywords) includes the list of these colors.
+
+### CSS Background Color
+
+We can set the background color for HTML elements using the `background-color` css property
+
+```html
+<div class="basic" style="background-color: lime;">lime</div>
+<p style="background-color:red;">Here is my paragraph...</p>
+```
+
+### CSS Text Color
+
+We can set the color of text using the `color` css property
+
+```html
+<h1 style="color: blue;">Hello World</h1>
+<p style="color: fuchsia;">Lorem ipsum...</p>
+<p style="color: aqua;">Lorem ipsum...</p>
+```
+
+### CSS Border Color
+
+We can set the border color for HTML elements using the `border` css property
+
+```html
+<h1 style="border:2px solid Tomato;">Hello World</h1>
+<h1 style="border:2px solid DodgerBlue;">Hello World</h1>
+<h1 style="border:2px solid Violet;">Hello World</h1>
+```
+
+### CSS Color Values
+
+In CSS, colors can also be specified using RGB values, HEX values, HSL values, RGBA values, and HSLA values.
+
+#### RGB & RGBA Value
+
+An RGB color value represents RED, GREEN, and BLUE light sources. In CSS, a color can be specified as an RGB value, using this formula: `rgb(red, green, blue)`. RGBA color values are an extension of RGB color values with an alpha channel - which specifies the opacity for a color. An RGBA color value is specified with: `rgba(red, green, blue, alpha)`. The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all).
+
+#### HEX & 3 Digit HEX Value
+
+A hexadecimal color is specified with: #RRGGBB, where the RR (red), GG (green) and BB (blue) hexadecimal integers specify the components of the color. In CSS, a color can be specified using a hexadecimal value in the form: `#rrggbb` where `rr` (red), `gg` (green) and `bb` (blue) are hexadecimal values between `00` and `ff` (same as decimal 0-255).
+
+For example, `#ff0000` is displayed as red, because red is set to its highest value (`ff`) and the others are set to the lowest value (`00`).
+
+The _3-digit_ hex code is a shorthand for some _6-digit_ hex codes. The _3-digit_ hex code has the following form: `#rgb` where `r`, `g`, and `b` represent the red, green, and blue components with values between `0` and `f`.
+
+#### HSL & HSLA Value
+
+HSL stands for hue, saturation, and lightness. In `CSS`, a color can be specified using hue, saturation, and lightness (HSL) in the form: `hsl(hue, saturation, lightness)`.
+
+- Hue is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, and 240 is blue.
+- Saturation is a percentage value. 0% means a shade of gray, and 100% is the full color.
+- Lightness is also a percentage. 0% is black, 50% is neither light or dark, 100% is white
+
+!["Wheel Color"](./assets/css_wheel_color.png "Wheel Color")
+
+HSLA color values are an extension of HSL color values with an alpha channel - which specifies the opacity for a color. An HSLA color value is specified with: `hsla(hue, saturation, lightness, alpha)`. The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all).
+
+#### CSS Color Examples
+
+```html
+<h1 style="background-color: rgb(255, 99, 71);">rgb(255, 99, 71)</h1>
+<h1 style="background-color: #ff6347;">#ff6347</h1>
+<h1 style="background-color: hsl(9, 100%, 64%);">hsl(9, 100%, 64%)</h1>
+```
+
+Same as color name, but 50% transparent:
+
+```html
+<h1 style="background-color: rgba(255, 99, 71, 0.5);">
+  rgba(255, 99, 71, 0.5)
+</h1>
+<h1 style="background-color: hsla(9, 100%, 64%, 0.5);">
+  hsla(9, 100%, 64%, 0.5)
+</h1>
+```
+
+```css
+body {
+  background-color: #bf2; /* same as #bbff22 */
+}
+
+h1 {
+  color: #00f; /* same as #0000ff */
+}
+
+p {
+  color: #c79; /* same as #cc7799 */
+}
+```
